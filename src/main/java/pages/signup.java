@@ -19,7 +19,7 @@ public class signup {
 	}
 	
 	@Test (priority=0)
-	public void GoToEcomerseSite(String url,String name) throws Exception {
+	public void GoToEcomerseSite(String url) throws Exception {
 		this.URL = url;
 		driver.get(url);
 		driver.manage().window().maximize();
