@@ -7,10 +7,16 @@ import pages.signup;
 public class TestCase1 extends BaseTest {
 	
 @Test
-public void OpenFreeVieoAndPlayTheVideo() throws Exception {
+public void OpenDemoSite() throws Exception {
 	  
 	  signup asignup = new signup(driver);
-	  asignup.GoToEcomerseSite("https://www.demoblaze.com/");
-	  
+	  asignup.GoToEcomerseSite("https://www.demoblaze.com/");  
   }
+@Test
+public void OpenSignUp() throws Exception {
+	  
+	  signup asignup = new signup(driver);
+	  asignup.singnUP("Akramul Islam", "Akram123");
+}
+
 }
